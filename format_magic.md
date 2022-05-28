@@ -1,7 +1,7 @@
 # format_magic solution
 
 ## by mario
-images/
+
 ## Premise:
 This challenge is in the steganography/miscellaneous category. This means that we are tasked with finding hidden information or data within something else (To learn more about  steganography, the wiki can be [found here](https://en.wikipedia.org/wiki/Steganography)). The only file we are provided with in this challenge is a jpg image [format_magic.jpg.](http://chal.ctf-league.osusec.org/format_magic.jpg)
 
