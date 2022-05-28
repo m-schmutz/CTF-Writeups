@@ -20,7 +20,7 @@ Every file has a specific file signature or *magic bytes* that identify the begi
 Here we can see where the jpg image ends. 
 
 ## Extracting the Zip Archive
-If we refer to the [list](https://en.wikipedia.org/wiki/List_of_file_signatures) of file signatures, we can see that the *magic bytes* at the beginning of a zip archive are *50 4B 03 04*. Looking at the bytes right after the end of the jpg, we can see that they are *FF 4B 03 04.* As you can see, the only difference between the two is that the *50* has been swapped out with *FF*. This is why binwalk did not see the beginning of the zip file and only the end. If we change the byte right after “D9” from “FF” to “50”, we will be able to extract the zip archive as its own file. After changing the byte, the file should look as follows in hexedit:
+If we refer to the [list](https://en.wikipedia.org/wiki/List_of_file_signatures) of file signatures, we can see that the *magic bytes* at the beginning of a zip archive are *50 4B 03 04*. Looking at the bytes right after the end of the jpg, we can see that they are *FF 4B 03 04.* As you can see, the only difference between the two is that the *50* has been swapped out with *FF*. This is why binwalk did not see the beginning of the zip file and only the end. If we change the byte right after *D9* from *FF* to *50*, we will be able to extract the zip archive as its own file. After changing the byte, the file should look as follows in hexedit:
 
 ![hexedit_2](format_magic_images/hexedit_2.png)
 
